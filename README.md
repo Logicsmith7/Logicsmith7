@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Logicsmith7
-- 👀 I’m interested  in progamming 
+- 👀 I’m interested  in progamming  
 - 🌱 I’m currently learning software
 - 💞️ I’m looking to collaborate on Github 
 - 📫 How to reach me ...
