@@ -1,0 +1,398 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Table</title>
+  <style>
+    *{
+    
+    padding: 0;
+    margin: 0;
+    font-family:system-ui,  'Segoe UI', Roboto, Oxygen, Ubuntu, 'Helvetica Neue', sans-serif;
+    
+    }
+.search{
+  margin: 50 20% ;
+  display: flex;
+  
+}
+input{
+  width: 800px;
+  padding: 10;
+  outline: none;
+  border-right: none;
+  border-bottom: 1px solid  rgb(194, 188, 188);;
+   border-left: 1px solid  rgb(194, 188, 188);;
+    border-top: 1px solid rgb(194, 188, 188);
+    border-radius: 7px 0px 0px 7px;
+
+
+}
+button{
+  padding: 10;
+  width: 100;
+  background-color: rgb(86, 179, 255);
+   border: none;
+  border-radius: 0px 7px 7px 0px;
+  cursor: pointer;
+  color: white;
+  font-size: 18;
+  font-style: italic;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-delay: 2s;
+  animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes anim {
+  0%{transform: scale(1);}
+   100%{transform: scale(1.1);}
+}
+  .brand{
+    margin: 0 10%;
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+ .h1{
+  width: 1430;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    right: -7.7%;
+    top: 37;
+    border: 1px solid rgb(206, 205, 205);
+    padding: 15;
+    background-color: rgb(235, 229, 229,0.5);
+    border-bottom: none;
+  
+color: rgb(41, 40, 40);
+
+  }
+  .brand{
+    overflow: clip;
+  }
+
+ ul{
+display: inline-block;
+ animation-name: an;
+  animation-duration: 20s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
+
+
+  }
+  li{
+    list-style: none;
+    
+  }
+  
+a{
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 24;
+  background-color: rgb(48, 47, 47);
+  padding: 9;
+  border-radius: 5px;
+ 
+
+  
+
+
+}
+@keyframes an {
+  0%{left: 0%;}
+  100%{left: 100%;}
+}
+.table{
+  border: 1px solid rgb(172, 167, 167);
+  transform: translate(10%,5%);
+  max-width: 1400;
+  padding: 30;
+  
+}
+table{
+  border: 1px solid rgb(175, 168, 168);
+
+}
+table,td{
+  
+  border-collapse: collapse;
+  border: 1px solid rgb(161, 158, 158);
+  
+}
+ #row1 {
+   display: flex;
+   
+   align-items: center;
+   text-transform: capitalize;
+   padding: 7;
+   font-weight: 800;
+   font-size: 14;
+  flex-wrap: wrap
+   
+
+
+}
+#row1 p{
+  margin: 2;
+}
+.col1{
+  background-color: hsla(226, 94%, 50%, 0.8) ;
+  color: white;
+  padding: 0px 10px 3px;
+  border-radius: 5px ;
+}
+.col2{
+  background-color: hsla(226, 0%, 50%, 0.8) ;
+  color: white;
+  padding: 0px 10px 3px;
+  border-radius: 5px ;
+}
+  
+.col3{
+  background-color: hsla(120, 96%, 26%, 0.8) ;
+  color: white;
+  padding: 0px 10px 3px;
+  border-radius: 5px ;
+}
+.col4{
+  background-color: hsla(204, 89%, 55%, 0.8) ;
+  color: white;
+   padding: 0px 10px 3px;
+  border-radius: 5px ;
+}
+.col5{
+  background-color: hsla(204, 0%, 0%) ;
+  color: white;
+   padding: 0px 10px 3px;
+  border-radius: 5px ;
+}
+.col6{
+    background-color: hsla(226, 94%, 50%, 0.8) ;
+  color: white;
+   padding: 0px 10px 3px;
+  border-radius: 5px ;
+}
+.col7{
+    background-color: hsla(226, 0%, 50%, 0.8) ;
+  color: white;
+   padding: 0px 10px 3px;
+  border-radius: 5px ;
+}
+th{
+  padding: 12;
+  border: 1px solid rgb(155, 150, 150);    
+  border-collapse: collapse;
+}
+.box4{
+  background-color: green;
+  width: 50px;
+  height: 50px;
+padding: 6;
+color: white;
+border-radius: 50%;
+}
+i{
+  font-size: 50;
+  margin: 0 -6;
+}
+p a{
+  border-width: 5px;
+  background-color: aqua;
+
+}
+  </style>
+</head>
+<body>
+  <caption>
+    <h1 style="text-align: center;">[Search for your phone model]</h1>
+ <div class="search"><input type="search" name="" id=""><button>Search</button>
+ </div>
+  <div class="brand">
+    <ul><li><a href="">Xiaomi mediatek</a></li></ul>
+     <ul><li><a href="">huawei</a></li></ul>
+      <ul><li><a href="">oppo</a></li></ul>
+       <ul><li><a href="">oneplus</a></li></ul>
+        <ul><li><a href="">infinix</a></li></ul>
+         <ul><li><a href="">tecno</a></li></ul>
+          <ul><li><a href="">samsung</a></li></ul>
+           <ul><li><a href="">vivo</a></li></ul>
+            <ul><li><a href="">mediatek</a></li></ul>
+             <ul><li><a href="">xiaomi qualcomm</a></li></ul>
+              <ul><li><a href="">qualcomm</a></li></ul>
+               <ul><li><a href="">realme</a></li></ul>
+                <ul><li><a href=''>itel</a></li></ul>
+  </div>
+  
+  </caption>
+  <h1 class="h1">Supported Models</h1>
+  <div class="table">
+    <table>
+    <tr>
+      <th>Model</th>
+      <th>Supported operations</th>
+    </tr>
+    <tr>
+      
+      
+        <td>xiaomi 11T-agate</td>
+        <div class="row1">
+        <td id="row1">
+      <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</sp>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      
+      </td>
+        </div>
+    </tr>
+    <tr>
+      <td>xiaomi mi play-lotus</td>
+      <td id="row1">
+      <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+
+    </tr>
+     <tr>
+      <td>xiaomi poco/Poco c31-angelicain</td>
+    <td id="row1">
+      <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+    </tr>
+     <tr>
+      <td>xiaomi redmi K40 Gaming/Poco F3 GT-ares</td>
+      <td id="row1">
+      <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+    </tr>
+     <tr>
+      <td>xiaomi poco M2- shiva</td>
+      <td id="row1">
+      <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+    </tr>
+     <tr>
+      <td>xiaomi Note 10 5G/Poco M3 5G-camellia</td>
+      <td id="row1">
+      <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+
+    </tr>
+     <tr>
+      <td>xiaomi Note 10 5G/poco M3 Pro- camillia</td>
+      
+      <td id="row1">
+        <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>          
+
+
+
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+    </tr>
+     <tr>
+      <td>Xiaomi Note 10 pro 5G/Poco X3 GT- chopin</td>
+      
+      <td id="row1">
+        <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+      <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+    </tr>
+     <tr>
+      <td>xiaomiRedmi 10X 5g-atom</td>
+      <td id="row1">
+      <p class="col1">read information</p>
+      <p class="col2">remove FRP</p>
+      <p class="col3">remove mi account</p>
+      <p class="col4">factory reset</p>
+      <p class="col5">unlock/relock bootloader</p>
+      <p class="col6">repair IMEI</p>
+      <p class="col7">patch cert</p>
+    <p>flash firmware</p>
+      <p>Backup/Restore/Erase NVDATA</p>
+      <p>Backup/Restore/Erase RPMB</p>
+      </td>
+    </tr>
+  </table>
+  </div>
+  <div class="model">
+    <p><a href="" title="Whatsapp number" style="padding: 0; font-size: 12; background-color: transparent; color: black;">
+      +25762843653</a></p>
+  <div class="box4">
+<i class="fa-brands fa-whatsapp"></i>
+  </div>
+  </div>
+  
+</html>
