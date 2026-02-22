@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bounc{
+        display: flex;
+        margin: 100;
+        gap: 6px;
+      }
+          .bouncer{
+        background-color: rgb(3, 155, 226);
+        width: 10;
+        height: 10;
+        border-radius: 50%;
+        animation-name: a;
+animation-duration: 2s;
+animation-timing-function: ease-in;
+
+animation-iteration-count: infinite;
+animation-direction: alternate;
+        }
+        .bouncer:nth-child(2){animation-delay: 0.5s;}
+         .bouncer:nth-child(3){animation-delay: 1s;}
+        @keyframes a {
+          0%{transform: translatey(0%);}
+            
+          100%{transform: translatey(100%);}
+            }
+        .box6{
+            border: 25px solid rgb(205, 205, 206);
+            width: 100;
+            height: 100;
+            border-radius: 50%;
+            border-bottom: 25px solid rgb(158, 154, 154);
+            animation: an 1s infinite  linear;
+        }
+
+        @keyframes an {
+          0%{transform: rotate(0deg);}  
+            100%{transform: rotate(360deg);}  
+        }
+        .box{
+          background-color: green;
+          height: 30;
+          width:  50;
+
+        }
+</style>
+        
+     
+</style>
+</head>
+<body>
+    <div class="box6">
+
+    </div>
+
+    <div class="bounc">
+<div class="bouncer"></div>
+<div class="bouncer"></div>
+<div class="bouncer"></div>
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
